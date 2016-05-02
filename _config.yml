@@ -1,17 +1,17 @@
 # 网站信息
-title:              "小李的杂货铺"
-description:        "大概会用来放一些奇奇怪怪的东西吧"
+title:              "drakeet 的黑历史"
+description:        "branch: 永远的黑历史"
 
 # 作者信息
-author_name:        "李明亮"
-author_email:       matthewlee0725@gmail.com
-twitter_username:   mth_li
+author_name:        "drakeet"
+author_email:       drakeet.me@gmail.com
+twitter_username:   drak11t
 
 # 网站设置
 baseurl:            ""
 permalink:          /:title
 timezone:           Asia/Shanghai
-encoding:           UTF-8  
+encoding:           UTF-8
 
 # 网站生成
 highlighter:        rouge

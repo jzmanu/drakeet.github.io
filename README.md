@@ -1,10 +1,9 @@
-mthli.github.io
+drakeet.github.io
 ===
-
-Deploy my blog in GitHub.
 
     The MIT License (MIT)
 
+    Copyright (c) 2016 drakeet
     Copyright (c) 2015 Matthew Lee
 
     Permission is hereby granted, free of charge, to any person obtaining a copy

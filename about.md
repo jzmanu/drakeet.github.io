@@ -2,16 +2,8 @@
 title: 关于我
 ---
 
-大家好，我是李明亮，目前在[知乎](http://www.zhihu.com "知乎 - 与世界分享你的知识、经验和见解")做 Android 开发实习。
+中学时候迷恋日本文学特别是推理小说，曾梦想成为小说家。大学学的是非计算机专业，却发现对编程世界有着巨大的兴趣热情以及比较好的天赋，进而开始追求技术。
 
-我一直认为人不应该局限在自己的世界范围内，所以我会去做很多好玩的、奇怪的、开阔眼界的事。
+微博：[@drakeet](htts://weibo.com/drak11t)
 
-下面是我的联系方式：
-
- - Email: matthewlee0725@gmail.com
-
- - GitHub: [mthli](https://github.com/mthli "李明亮")
-
- - Twitter: [@mth_li](https://twitter.com/mth_li "并未延毕小王子")
-
-欢迎大家多多交流～
+GitHub：https://github.com/drakeet
