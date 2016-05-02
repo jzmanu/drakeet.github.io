@@ -1,4 +1,7 @@
 drakeet.github.io
+
+Thanks Matthew Lee and his cute blog: [mthli.github.io](mthli.github.io)
+
 ===
 
     The MIT License (MIT)
