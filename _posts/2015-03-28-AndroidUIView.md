@@ -48,10 +48,10 @@ xmlns:drakeet="http://schemas.android.com/apk/res-auto"
 ```
 
 <h3>自定义属性：</h3>
-<ul>
-	<li>`drakeet:alpha_pressed` [integer 默认:48 0-255] --&gt; Alpha of the cover color when pressed</li>
-	<li>`drakeet:color_pressed` [color 默认:#9c000000] --&gt; Color of the cover when pressed</li>
-	<li>`drakeet:shape_type` [enum (rectangle, round) 默认:rectangle] --&gt; Rectangle or round of cover shape</li>
-	<li>`drakeet:radius` [dimension 默认:2dp] --&gt; Add a radius to the cover</li>
-</ul>
+
+- `drakeet:alpha_pressed` [integer 默认:48 0-255] -&gt; Alpha of the cover color when pressed
+- `drakeet:color_pressed` [color 默认:#9c000000] -&gt; Color of the cover when pressed
+- `drakeet:shape_type` [enum (rectangle, round) 默认:rectangle] -&gt; Rectangle or round of cover shape
+- `drakeet:radius` [dimension 默认:2dp] -&gt; Add a radius to the cover
+
 <a title="示例 apk" href="https://github.com/drakeet/AndroidUIView/blob/master/sample/sample-release.apk" target="_blank">Demo apk 下载</a>
