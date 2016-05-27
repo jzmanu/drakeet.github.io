@@ -1,6 +1,6 @@
 今天把 <a title="贝壳单词下载" href="http://fir.im/seashell" target="_blank">贝壳单词</a> 中英语角的 quick return 效果剥离出来写了个 Demo，讲解使用 RecyclerView 写快速返回菜单，效果如下（分别是贝壳单词和 Demo 的截图）：
 
-<a href="http://drakeet.me/wp-content/uploads/2015/02/am4.gif"><img class="alignnone  wp-image-760" src="http://drakeet.me/wp-content/uploads/2015/02/am4.gif" alt="贝壳单词英语角" width="171" height="306" /></a> <a href="http://drakeet.me/wp-content/uploads/2015/02/device-2015-02-14-143056.png"><img class="alignnone wp-image-761" src="http://drakeet.me/wp-content/uploads/2015/02/device-2015-02-14-143056.png" alt="device-2015-02-14-143056" width="171" height="304" /></a>
+<img class="alignnone  wp-image-760" src="/assets/img/2015-04-12-anim-1.gif" alt="贝壳单词英语角" width="171" height="306" /> <img class="alignnone wp-image-761" src="/assets/img/2015-04-12-anim-2.png" alt="device-2015-02-14-143056" width="171" height="304" />
 
 通过这篇文章你将了解到的知识有：
 <ul>
@@ -169,6 +169,6 @@ public int getItemCount() {
 
 （注意：我使用的是最新的 Android Studio 最新的 Gradle，如果你编译或载入不了，也不用太在意，直接用文本编辑器什么的打开 java 源代码文件阅读就好，不一定非要用 IDE）
 
-<img class="alignnone wp-image-773" src="http://drakeet.me/wp-content/uploads/2015/02/ic_launcher.png" alt="ic_launcher" width="16" height="16" /> Demo apk 下载：
+Demo apk 下载：
 
 <a href="https://github.com/drakeet/RecyclerQuickReturnDemo/raw/master/app-demo.apk" target="_blank">https://github.com/drakeet/RecyclerQuickReturnDemo/raw/master/app-demo.apk</a>
