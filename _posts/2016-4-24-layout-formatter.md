@@ -21,9 +21,9 @@ title: 当我们谈 XML 布局文件代码的优雅性
 
 上图中，左边是随意书写、乱序的，右图则是按照一定顺序规则有序的，相比之下，我想应该都会觉得右图看起来舒服许多，而且益处应该也是比较明显的。
 
-为了优雅性，以前我都是手动进行排序，`id` 手动写前头，`text` 手动写在末尾，直到最近，因为与人协作，不得不面对大量遗留下来的左图式的 `XML` 文件，忽然想起可以写一个 Idea/AndroidStudio 插件来自动化格式化这些文件内容。于是下载了 Idea 社区版，查看了几下官方文档和一个小示例，就摸索着写起了，最终完成了本文想要推荐 LayoutFormatter.
+为了优雅性，以前我都是手动进行排序，`id` 手动写前头，`text` 手动写在末尾，直到最近，因为与人协作，不得不面对大量遗留下来的左图式的 `XML` 文件，忽然想起可以写一个 Idea/AndroidStudio 插件来自动化格式化这些文件内容。于是下载了 Idea 社区版，查看了几下官方文档和一个小示例，就摸索着写起了，最终完成了本文想要推荐 `LayoutFormatter`.
 
-这是我开发并且完全开源的一个 Idea/AndroidStudio 插件，通过 `右键 -> Refactor -> Reformat Layout XML`. 即可一键格式化你的 XML 文件，甚至可以一键格式化你整个项目或某个文件夹下的所有 XML 文件：
+这是我开发并且完全开源的一个 `Idea/AndroidStudio` 插件，通过 `右键 -> Refactor -> Reformat Layout XML`. 即可一键格式化你的 `XML` 文件，甚至可以一键格式化你整个项目或某个文件夹下的所有 `XML` 文件：
 
 <a href="https://github.com/drakeet/LayoutFormatter" target="_blank">https://github.com/drakeet/LayoutFormatter</a>
 
