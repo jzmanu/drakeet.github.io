@@ -46,7 +46,7 @@ private Handler mHandler = new Handler() {
 
 解决办法就是大家都知道的使用<strong>静态内部类</strong>加 WeakReference：
 
-[java]
+```java
 private StaticHandler mHandler = new StaticHandler(this);
 
 public static class StaticHandler extends Handler {
@@ -62,11 +62,11 @@ public static class StaticHandler extends Handler {
         super.handleMessage(msg);
     }
 }
-[/java]
+```
 
 另外，综合上面两种情况，如果一个变量，既是静态变量，而且是<strong>非静态的内部类对象，</strong>那么也会造成内存泄漏：
 
-[java]
+```java
 public class LeakActivity extends AppCompatActivity {
 
     private static Hello sHello;
@@ -82,7 +82,7 @@ public class LeakActivity extends AppCompatActivity {
 
     public class Hello {}
 }
-[/java]
+```
 
 注意，这里我们定义的 Hello 虽然是空的，但它是一个非静态的内部类，所以它必然会持有外部类即 LeakActivity.this 引用，导致 sHello 这个静态变量一直持有这个 Activity，于是结果就和第一个例子一样，Activity 无法被回收。
 
@@ -96,18 +96,18 @@ public class LeakActivity extends AppCompatActivity {
 
 最后说一说 RxJava 使用不当造成的内存泄漏，RxJava 是一个非常易用且优雅的异步操作库。对于异步的操作，如果没有及时取消订阅，就会造成内存泄漏：
 
-[java]
+```java
 Observable.interval(1, TimeUnit.SECONDS)
           .subscribe(new Action1<Long>() {
               @Override public void call(Long aLong) {
                   // pass
               }
           });
-[/java]
+```
 
 同样是匿名内部类造成的引用没法被释放，使得如果在 Activity 中使用就会导致它无法被回收，即使我们的 Action1 看起来什么也没有做。解决办法就是接收 subscribe 返回的 Subscription 对象，在 Activity onDestroy 的时候将其取消订阅即可：
 
-[java]
+```java
 public class LeakActivity extends AppCompatActivity {
 
     private Subscription mSubscription;
@@ -131,11 +131,11 @@ public class LeakActivity extends AppCompatActivity {
         mSubscription.unsubscribe();
     }
 }
-[/java]
+```
 
 除了以上这种解决方式之外，还有一种解决方式就是通过 RxJava 的 compose 操作符和 Activity 的生命周期挂钩，我们可以使用一个很方便的第三方库叫做 <a href="https://github.com/trello/RxLifecycle" target="_blank">RxLifecycle</a> 来快捷做到这点，使用起来就像这样：
 
-[java]
+```java
 public class MyActivity extends RxActivity {
     @Override
     public void onResume() {
@@ -145,7 +145,7 @@ public class MyActivity extends RxActivity {
             .subscribe();
     }
 }
-[/java]
+```
 
 另外，它还提供了和 View 的便捷绑定，详情可以点击我提供的链接进行了解，这里不多说了。
 
