@@ -2,15 +2,15 @@
 
 		{% if page.url == '/index.html' or page.url == '/' %}
 			{% assign link = '/about' %}
-			{% assign prompt = '关于我' %}
+			{% assign prompt = '永远的黑历史' %}
 		{% else %}
 			{% assign link = '/' %}
-			{% assign prompt = '返回' %}
+			{% assign prompt = '' %}
 		{% endif %}
 
     <div class="left">
 			<a href="{{ link | prepend: site.baseurl }}">
-				<h1>永远的黑历史</h1>
+				<h1>{{ prompt }}</h1>
 			</a>
 			<span class="logo-prompt"></span>
     </div>
