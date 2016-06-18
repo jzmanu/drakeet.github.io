@@ -1,16 +1,18 @@
-<aside class="logo">
+	<article>
 
-	{% if page.url == '/index.html' or page.url == '/' %}
-		{% assign link = '/about' %}
-		{% assign prompt = '关于我' %}
-	{% else %}
-		{% assign link = '/' %}
-		{% assign prompt = '返回' %}
-	{% endif %}
+		{% if page.url == '/index.html' or page.url == '/' %}
+			{% assign link = '/about' %}
+			{% assign prompt = '关于我' %}
+		{% else %}
+			{% assign link = '/' %}
+			{% assign prompt = '返回' %}
+		{% endif %}
 
-	<a href="{{ link | prepend: site.baseurl }}">
-		<h1 class="title">永远的黑历史</h1>
-	</a>
-	<span class="logo-prompt">{{ prompt }}</span>
+    <div class="left">
+			<a href="{{ link | prepend: site.baseurl }}">
+				<h1 class="title">永远的黑历史</h1>
+			</a>
+			<span class="logo-prompt">{{ prompt }}</span>
+    </div>
 
-</aside>
+	</article>
