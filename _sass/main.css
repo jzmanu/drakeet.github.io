@@ -235,7 +235,7 @@ article {
   margin: 0 auto; }
   article .title {
     line-height: 1.4em;
-    text-align: center; }
+    text-align: left; }
   article .divider {
     background: #DDDDDD;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#CCCCCC), to(rgba(255, 255, 255, 0)));
