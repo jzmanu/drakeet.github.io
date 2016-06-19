@@ -7,6 +7,4 @@
 </ul>
 安装包只有 1.45MB， 下载： <a href="http://fir.im/puremosaic" target="_blank">http://fir.im/puremosaic</a>
 
-Google Play：
-
-<a href="https://play.google.com/store/apps/details?id=me.drakeet.puremosaic" target="_blank"><img class="alignnone size-full wp-image-1175" src="/assets/img/google-play.png" alt="gp" width="129" height="45" /></a>
+Google Play： <a href="https://play.google.com/store/apps/details?id=me.drakeet.puremosaic" target="_blank"><img class="alignnone size-full wp-image-1175" src="/assets/img/google-play.png" alt="gp" width="129" height="45" /></a>
