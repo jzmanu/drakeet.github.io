@@ -1,3 +1,4 @@
+![](/assets/img/pure-mosaic.jpg)
 <ul>
 	<li>新增 <strong>高亮模式</strong>；</li>
 	<li>新增 <strong>支持双指缩放、移动图片</strong>；</li>
@@ -9,5 +10,3 @@
 Google Play：
 
 <a href="https://play.google.com/store/apps/details?id=me.drakeet.puremosaic" target="_blank"><img class="alignnone size-full wp-image-1175" src="/assets/img/google-play.png" alt="gp" width="129" height="45" /></a>
-
-![](/assets/img/pure-mosaic.jpg)
