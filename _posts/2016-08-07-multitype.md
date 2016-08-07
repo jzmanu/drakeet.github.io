@@ -5,9 +5,9 @@ title: Android 复杂的多类型列表视图新写法：MultiType
 <h1>MultiType</h1>
 Android 复杂的多类型列表视图新写法，清晰、灵活、模块开发、插件化思想
 
-<a href="https://github.com/drakeet/MultiType/blob/master/LICENSE" rel="nofollow"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License" /></a> <img src="https://img.shields.io/maven-central/v/me.drakeet.multitype/multitype.svg" alt="maven-central" />
+<img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License" /> <img src="https://img.shields.io/maven-central/v/me.drakeet.multitype/multitype.svg" alt="maven-central" />
 
-中文版 | <a href="https://github.com/drakeet/MultiType" target="_blank" rel="nofollow">英文版</a>(English Version)
+中文版 | [English Version](https://github.com/drakeet/MultiType)
 
 GitHub: <a href="https://github.com/drakeet/MultiType" target="_blank" rel="nofollow">https://github.com/drakeet/MultiType</a>
 
@@ -16,14 +16,16 @@ GitHub: <a href="https://github.com/drakeet/MultiType" target="_blank" rel="nofo
 <strong>一旦我们需要新增一些新的 item view types ，就得去修改 <code>Adapter</code> 旧的代码，步骤繁多，侵入较强</strong>。
 
 现在好了，只要三步，不需要修改旧代码，只要无脑往池子里插入新的 type ，会自动连接、分发数据和事件，新增再多的 item types 都能轻松搞定，支持 RV 、复用，代码模块开发，清晰而灵活。若要说为什么这么灵活？ 因为它本来就是为 IM 视图开发的，想想 IM 的消息类型可能有多少种而且新增频繁。
-<!--more-->
+
 <h2>接入</h2>
 在你的 <code>build.gradle</code>:
+
 ```groovy
 dependencies {
     compile 'me.drakeet.multitype:multitype:1.1'
 }
 ```
+
 <h2>使用</h2>
 <h4>Step 1. 创建一个 class <strong>implements</strong> <code>ItemContent</code>，它将是你的数据类型或 <code>Java bean</code>，示例：</h4>
 ```java
