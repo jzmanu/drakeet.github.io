@@ -7,7 +7,7 @@ Android 复杂的多类型列表视图新写法，清晰、灵活、模块开发
 
 <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License" /> <img src="https://img.shields.io/maven-central/v/me.drakeet.multitype/multitype.svg" alt="maven-central" />
 
-中文版 | [English Version](https://github.com/drakeet/MultiType)
+[English Version](https://github.com/drakeet/MultiType)
 
 GitHub: <a href="https://github.com/drakeet/MultiType" target="_blank" rel="nofollow">https://github.com/drakeet/MultiType</a>
 
